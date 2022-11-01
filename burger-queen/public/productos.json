@@ -1,0 +1,79 @@
+
+[
+  {
+    "id": "P001",
+    "img": "https://www.saborusa.com/wp-content/uploads/2019/10/imagen_cap_10_2.png",
+    "ingredients": ["Costilla de cerdo o vacuno", "Marraqueta", "Salsa BBQ"],
+    "name": "Costillar ahumado con salsa BBQ",
+    "price": 10000
+  },
+
+  {
+    "id": "P002",
+    "img": "https://blog.disfrutaverdura.com/wp-content/uploads/2018/01/Brocheta-de-verduras-multicolor.jpg",
+    "ingredients": [
+      "Champiñones",
+      "tomates",
+      "Pimento",
+      "Pepino",
+      "Zanahoria",
+      "Brocoli",
+      "Cebolla",
+      "Papa"
+    ],
+    "name": "Brochetas de verduras ahumadas",
+    "price": 10000
+  },
+
+  {
+    "id": "P003",
+    "img": "https://cocinarrecetasdepostres.net/wp-content/uploads/2019/06/wordpressomatic/Classic-Pulled-Pork-Sandwich4.jpg",
+    "ingredients": [
+      "Proteina a eleccion",
+      "carne cerdo ahumado",
+      "Vacuno ahumado",
+      "Hamburguesa de lentejas",
+      "Pollo ahumado",
+      "Coleslaw",
+      "Pepinillos dulces",
+      "Salsa alioli"
+    ],
+    "name": "Sandwich Ahumado",
+    "price": 5500
+  },
+
+  {
+    "id": "P004",
+    "img": "https://media.istockphoto.com/photos/smoothies-juices-beverages-drinks-variety-picture-id509237632?k=20&m=509237632&s=612x612&w=0&h=G8QJdFWNG2vUF59CCPwbnX1S82eK09YVCSU02F9spGA=",
+    "ingredients": [
+      "Mango",
+      "Naranja",
+      "Piña",
+      "Frutilla",
+      "Arandanos",
+      "Limonada"
+    ],
+    "name": "Jugos naturales",
+    "price": 2000
+  },
+
+  {
+    "id": "P005",
+    "img": "https://images.hola.com/imagenes/cocina/escuela/200907079224/temperatura/vinos/enologia/0-876-296/temperatura-adobe-t.jpg?tx=w_568",
+    "ingredients": ["Vino blanco", "Vino tinto", "Vino dulce"],
+    "name": "Copa de Vino",
+    "price": 3000
+  },
+  {
+    "id": "P006",
+    "img": "https://st.depositphotos.com/1020804/3611/i/600/depositphotos_36113839-stock-photo-still-life-with-a-draft.jpg",
+    "ingredients": [
+      "Cerveza negra",
+      "Cerveza rubia",
+      "Cerveza miel",
+      "Cerveza berries"
+    ],
+    "name": "Chop de Cerveza",
+    "price": 6000
+  }
+]
