@@ -1,24 +1,26 @@
-import Home from './Views/Home'; //se importa la vista de home
-import {BrowserRouter, Routes, Route} from 'react-router-dom'//se importan los componente que le dan movilidad a la pagina
-import { SmokeProvider } from './Context/Context';
-import Kitchen from './Views/Kitchen';
-import Waiter from './Views/Waiter';
+import { SmokeProvider } from "./Context/Context";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
+import Home from "./Views/Home";
+import Waiter from "./Views/Waiter";
+import Kitchen from "./Views/Kitchen";
+// import Login from './Views/Login';
+import Cart from "./Views/Cart";
 
 function App() {
   return (
     <>
-    <BrowserRouter>
-    <SmokeProvider>
-
-<Routes>
-  <Route path='/' element={<Home/>}/>
-  <Route path='/Kitchen' element={<Kitchen/>}/>
-  <Route path='/Waiter' element={<Waiter/>}/>
-
-</Routes>
-</SmokeProvider>
-    </BrowserRouter>
+      <BrowserRouter>
+        <SmokeProvider>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            {/* <Route path="/Login" element={<Login />} /> */}
+            <Route path="/Waiter" element={<Waiter />} />
+            <Route path="/Kitchen" element={<Kitchen />} />
+            <Route path="/Cart" element={<Cart />} />
+          </Routes>
+        </SmokeProvider>
+      </BrowserRouter>
     </>
   );
 }

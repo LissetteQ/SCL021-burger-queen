@@ -2,9 +2,10 @@ import React from "react";
 // import { useNavigate } from 'react-router-dom'
 import { useContext } from "react";
 import SmokeContext from "../Context/Context";
+import { formatNumber } from "../Helper";
 
 const Card = () => {
-  const { menus } = useContext(SmokeContext);
+  const { menus, addToCart } = useContext(SmokeContext);
 
   // const navigate = useNavigate();
 
@@ -29,11 +30,12 @@ const Card = () => {
             </div>
 
             <h2 className="text-center text-dark pb-3">
-              Precio: ${menu.price}
+              Precio: ${formatNumber(menu.price)}
             </h2>
             <div className="d-flex justify-content-around mb-4">
               <button
                 className="btn btn-danger"
+                onClick={() => addToCart(menu)}
               >
                 Añadir
               </button>

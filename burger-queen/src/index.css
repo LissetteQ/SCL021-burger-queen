@@ -5,35 +5,61 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: url(../src/Assets/img/fondo.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-image:url(../src/Assets/img/fondo.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+min-height: 100vh;
+
 
 }
-
-
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
-  
 }
 
-.logo1 {
-  width: 40%;
- margin-left: 20%;
- margin-top: 6%;
+.logo1{
+width: 50%;
+margin-left: 25%;
+text-align: center;
+margin-top: 5%;
+}
+.buttonsH{
+margin-top: 5%;
+margin-left: 40%;
+}
+.msj{
+  padding-top: 10%;
+  color: whitesmoke;
+  text-align: center;
+}
+
+.logo2{
+width: 20%;
 
 }
-.boton{
-margin-top: 8%;
-display: flex;
-position: relative;
-left: 16%;
-gap: 10%;
 
+.active {
+  color: whitesmoke;
+  text-decoration: none;
+}
+.no-active {
+  color: gray;
+  text-decoration: none;
+}
+.nav-home{
+  font-size: 25px;
 
 }
-.logoCocina{
-  width: 40%;
+
+.nav-carrito{
+  font-size: 25px;
+
+}
+
+.Total{
+  color: yellow;
+
+font-size: 23px;
+
 }
