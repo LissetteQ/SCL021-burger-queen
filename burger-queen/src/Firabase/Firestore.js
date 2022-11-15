@@ -1,5 +1,5 @@
 import { db } from "./firebase.js";
-import { addDoc, collection } from "firebase/firestore";
+import { addDoc, collection, getDocs } from "firebase/firestore";
 
 async function fireData(order) {
   try {
@@ -8,4 +8,14 @@ async function fireData(order) {
   } catch (e) {console.log(e)}
 
 }
-export {fireData};
+//trae la base de dato de firebase a la vista de la cocina
+async function traeData(){
+const querySnapshot = await getDocs(collection(db, "users"));
+querySnapshot.forEach((doc) => {
+  
+  console.log(doc.id, " => ", doc.data());
+
+})
+return querySnapshot
+};
+export {fireData, traeData};
