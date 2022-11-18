@@ -10,12 +10,13 @@ async function fireData(order) {
 }
 //trae la base de dato de firebase a la vista de la cocina
 async function traeData(){
+  const orderKitchen = []
 const querySnapshot = await getDocs(collection(db, "users"));
 querySnapshot.forEach((doc) => {
   
-  console.log(doc.id, " => ", doc.data());
-
+  orderKitchen.push(doc.data())
 })
-return querySnapshot
-};
+return orderKitchen
+}
+
 export {fireData, traeData};

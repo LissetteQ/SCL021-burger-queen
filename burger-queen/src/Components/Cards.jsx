@@ -1,5 +1,8 @@
+//traemos  la informacion correspondiente a nuestro menu mediante el 
+//SmokeContext (menu y carrito//
+//tambien realizamos el formateo de los numeros con el helper formatNumber  $$//
+
 import React from "react";
-// import { useNavigate } from 'react-router-dom'
 import { useContext } from "react";
 import SmokeContext from "../Context/Context";
 import { formatNumber } from "../Helper";
@@ -7,10 +10,13 @@ import { formatNumber } from "../Helper";
 const Card = () => {
   const { menus, addToCart } = useContext(SmokeContext);
 
-  // const navigate = useNavigate();
+// ahora extraemos la informacion del listado de los productos  con el menu.map
+//utilizamos la key menu.id para desglosar la informacion
+//posteriormente posicionamos en la carta la imagen,nombre, ingredientes y precio 
 
   return (
     <>
+
       {menus.map((menu) => (
         <div key={menu.id} className="col">
           <div className="card">

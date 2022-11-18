@@ -1,6 +1,8 @@
+//Aqui se juntan todas las vistas se importa el smokeprovider para que se consuman los datos
+//se trabaja con react router dom  para poder nav entre vistas 
+
 import { SmokeProvider } from "./Context/Context";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-
 import Home from "./Views/Home";
 import Waiter from "./Views/Waiter";
 import Kitchen from "./Views/Kitchen";

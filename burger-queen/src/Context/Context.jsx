@@ -1,16 +1,16 @@
 import { createContext, useState, useEffect } from "react";
 
-//  context creation
+//se crea context para reutilizar la info del json y funcionalidades en varios componentes
 
 const SmokeContext = createContext();
 
-// Data Provider
+// se guarda info en el hook useState
 
 const SmokeProvider = ({ children }) => {
   const [menus, setMenu] = useState([]);
   const [carrito, setCarrito] = useState([]);
 
-  //Get Menu
+  //extrae la data de json mediante fetch y guarda informacion con useEffect
 
   useEffect(() => {
     const getMenu = async () => {
@@ -33,7 +33,7 @@ const SmokeProvider = ({ children }) => {
     getMenu();
   }, []);
 
-  //Orden//
+  //Se crea carrito de compras
 
   const addToCart = ({ id, price, name, img }) => {
     const productoEcontradoIndex = carrito.findIndex((p) => p.id === id);
@@ -74,7 +74,7 @@ const SmokeProvider = ({ children }) => {
   );
 };
 
-// Export Provider
+// Export Provider (permite que los componentes consuman los datos)
 export { SmokeProvider };
 
 // Export Context

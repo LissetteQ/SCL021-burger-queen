@@ -1,3 +1,5 @@
+// importamos  el componente Card y Navbar para dar forma a la vista Waiter (garzon)//
+
 import React from "react";
 import Card from "../Components/Cards";
 import NavBar from "../Components/Navbar";
