@@ -8,6 +8,7 @@ import logo from "../Assets/img/logo.jpeg";
 import { Container, Button } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { useNavigate } from "react-router-dom";
+import './home.css'
 
 //navegamos por la pagina sin necesidad de refrescarla
 const Home = () => {

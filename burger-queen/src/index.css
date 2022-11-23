@@ -5,11 +5,12 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image:url(../src/Assets/img/fondo.jpg);
-background-size: cover;
-background-repeat: no-repeat;
+  background:url(../src/Assets/img/fondo.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 min-height: 100vh;
-
 
 }
 

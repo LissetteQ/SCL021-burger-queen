@@ -29,7 +29,7 @@ const NavBar = () => {
   const setActiveClass = ({ isActive }) => (isActive ? "active" : "no-active");
 
   return (
-    <Navbar fixed="top" bg="dark" variant="dark">
+    <Navbar fixed="" bg="dark" variant="dark">
       <Container>
         <Navbar.Brand>
           {" "}

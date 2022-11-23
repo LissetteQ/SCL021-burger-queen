@@ -3,7 +3,7 @@
 import React from "react";
 import Card from "../Components/Cards";
 import NavBar from "../Components/Navbar";
-
+import './waiter.css'
 const Waiter = () => {
   return (
     <>

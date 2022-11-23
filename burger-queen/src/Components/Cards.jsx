@@ -1,11 +1,12 @@
 //traemos  la informacion correspondiente a nuestro menu mediante el 
 //SmokeContext (menu y carrito//
 //tambien realizamos el formateo de los numeros con el helper formatNumber  $$//
-
 import React from "react";
 import { useContext } from "react";
 import SmokeContext from "../Context/Context";
 import { formatNumber } from "../Helper";
+import './card.css';
+
 
 const Card = () => {
   const { menus, addToCart } = useContext(SmokeContext);
@@ -35,7 +36,7 @@ const Card = () => {
               </ul>
             </div>
 
-            <h2 className="text-center text-dark pb-3">
+            <h2 className="text-center text-whiter pb-3">
               Precio: ${formatNumber(menu.price)}
             </h2>
             <div className="d-flex justify-content-around mb-4">
